@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF8">
+     <link rel="stylesheet" href="../css/index.css"/>
+    <title>PAYNE'S</title>
+    <link rel="icon" href="../media/images/icon.png">
+</head>
+<body>
+    <div id="header">
+        <img id="logo" src="../media/images/PAYNES.png">
+        <div id="menuButton">
+            <div id="barsContainer">
+                <div class="menuButtonBar"></div>
+                <div class="menuButtonBar"></div>
+                <div class="menuButtonBar"></div>
+            </div>
+        </div>
+    </div>
+    <div id="menuExpanded">
+        <div id="menuExpandedOptions">
+            <a href="javascript:void(0);" class="socialMenu noDecorLink" alt="Acceso y registro" onclick="generateLogIn()">º</a>
+            <a href="javascript:void(0);" class="socialMenu noDecorLink" alt="Mostrar galería" onclick="showImage()">9</a>
+        </div>
+        <ul class="menuContentHeader left">
+            <li><span class="browser_candy">Buscador</span>
+                <ul>
+                    <li class="noHover">
+                        <div>
+                            <form action="javascript:void(0);" class="formMenuExpanded">
+                                <input name="search">
+                                <br><br>
+                                <input type="submit" name="Buscar" class="greenButton centerButtonExpanded">
+                            </form>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="menuContentHeader">
+            <li><span class="superior_candy">Superior</span>
+                <ul>
+                    <li><a class="category_shirt" alt="Categoría camisas" onclick="generateShopShowcase()">Camisas</a></li>
+                    <li><a class="category_t-shirt" alt="Categoría camisetas" onclick="generateShopShowcase()">Camisetas</a></li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="menuContentHeader">
+            <li><span class="inferior_candy">Inferior</span>
+                <ul>
+                    <li><a class="category_short" alt="Categoría bermudas" onclick="generateShopShowcase()">Bermudas</a></li>
+                    <li><a class="category_skirt" alt="Categoría faldas" onclick="generateShopShowcase()">Faldas</a></li>
+                    <li><a class="category_socks" alt="Categoría calcetines" onclick="generateShopShowcase()">Calcetines</a></li>
+                    <li><a class="category_shoes" alt="Categoría calzado" onclick="generateShopShowcase()">Calzado</a></li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="menuContentHeader">
+            <li><span class="accesorios_candy">Accesorios</span>
+                <ul>
+                    <li><a class="category_caps"alt="Categoría gorras"  onclick="generateShopShowcase()">Gorras</a></li>
+                    <li><a class="category_jewely" alt="Categoría bisutería" onclick="generateShopShowcase()">Bisutería</a></li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="menuContentHeader">
+            <li><span class="souvenires_candy">Souvenires</span>
+                <ul>
+                    <li><a class="category_necklace" alt="Categoría collares" onclick="generateShopShowcase()">Collares</a></li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="menuContentHeader right">
+            <li><span>Social</span>
+                <ul>
+                    <li class="socialMenu noDecorLink"><a href="https://www.youtube.com/">y</a></li>
+                    <li class="socialMenu noDecorLink"><a href="https://twitter.com/?lang=es">t</a></li>
+                    <br>
+                    <li class="socialMenu noDecorLink"><a href="https://es-es.facebook.com/">f</a></li>
+                    <li class="socialMenu noDecorLink"><a href="https://www.instagram.com/">c</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div id="center">
+        <div id="left">
+            <div class="title"><p>Buscador</p></div>
+            <div>
+                <form action="javascript:void(0);" class="formMenu">
+                    <label for="search">Producto:</label>
+                    <br>
+                    <input name="search" >
+                    <br><br>
+                    <input type="submit" name="Buscar" class="greenButton centerButton" onclick="valideForm(0)">
+                </form>
+            </div>
+            <div id="menuTitle" class="title"><p>Catálogo</p></div>
+            <div id="menuContainer">
+                <ul id="menuContent">
+                    <li><span class="superior_candy">Superior</span>
+                        <ul>
+                            <li><a class="category_shirt" alt="Categoría camisas" onclick="generateShopShowcase()">Camisas</a></li>
+                            <li><a class="category_t-shirt" alt="Categoría camisetas" onclick="generateShopShowcase()">Camisetas</a></li>
+                        </ul>
+                    </li>
+                    <li><span class="inferior_candy">Inferior</span>
+                        <ul>
+                            <li><a class="category_short" alt="Categoría bermudas" onclick="generateShopShowcase()">Bermudas</a></li>
+                            <li><a class="category_skirt" alt="Categoría faldas" onclick="generateShopShowcase()">Faldas</a></li>
+                            <li><a class="category_socks" alt="Categoría calcetines" onclick="generateShopShowcase()">Calcetines</a></li>
+                            <li><a class="category_shoes" alt="Categoría calzado" onclick="generateShopShowcase()">Calzado</a></li>
+                        </ul>
+                    </li>
+                    <li><span class="accesories_candy">Accesorios</span>
+                        <ul>
+                            <li><a class="category_caps"alt="Categoría gorras"  onclick="generateShopShowcase()">Gorras</a></li>
+                            <li><a class="category_jewely" alt="Categoría bisutería" onclick="generateShopShowcase()">Bisutería</a></li>
+                        </ul>
+                    </li>
+                    <li><span class="souvenires_candy">Souvenires</span>
+                        <ul>
+                            <li><a class="category_necklace" alt="Categoría collares" onclick="generateShopShowcase()">Collares</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="title"><p>Galería</p></div>
+            <div id="imageGalery" class="tinyFont centerText"><p>No hay contenido disponible</p></div>
+            <div class="title"><p>Iniciar sesión</p></div>
+            <div class="formMenu">
+                <form action="javascript:void(0);" method="post">
+                    <label for="email">Email:</label>
+                    <br>
+                    <input type="text" name="email" id="loginEmail">
+                    <br><br>
+                    <label for="password">Contraseña:</label>
+                    <br>
+                    <input type="text" name="password" id="loginPassword">
+                    <div id="formError"><br></div>
+                    <input type="submit" name="Enviar" class="greenButton centerButton" onclick="valideForm(0)">
+                    <br><br>
+                    <a href="javascript:void(0);" id="signUpLink" class="tinyFont whiteLink centreLink" alt="Registrarse">¿No estás registrado?</a>
+                </form>
+            </div>
+        </div>
+        <div id="right">
+            <div id="candyRow"><p><span class="oh_a_candy candy_home" id="candy_home"><a href="javascript:void(0);" alt="Página principal" onclick="generateHome()">Home</a></span></p><a id="webMap" class="social noDecorLink" href="webMap.html" alt="Consultar mapa web">)</a></div>
+            <div id="rightBody">
+                <div id="showcase">
+                    <div id="homeContainer"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div><p><span>Accesibilidad</span></p></div>
+        <div><p><span>F.A.Q</span></p></div>
+        <div><p><span>Acerca de nosotros</span></p></div>
+        <div id="external"><p class="social"><span><a href="https://www.youtube.com/">y</a></span> <span><a href="https://twitter.com/?lang=es">t</a></span> <span><a href="https://es-es.facebook.com/">f</a></span></p><br><p class="social"><span><a href="https://www.instagram.com/">c</a></span> <span><a href="https://www.amazon.es/">,</a></span></p></div>
+    </div>
+    <script src="../js/libs/jQueryv3.5.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="../js/index.js"></script>
+</body>
+</html>

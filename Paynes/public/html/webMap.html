@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF8">
+     <link rel="stylesheet" href="../css/webMap.css"/>
+    <title>PAYNE'S</title>
+    <link rel="icon" href="../media/images/icon.png">
+</head>
+<body>
+    <h1>Mapa web</h1>
+    <h2><a href="http://localhost:2525/html/index.html" class="noDecorLink" alt="Página principal de Payne's">Payne's</a></h2>
+    <div id="menuExpanded">
+        <li class="idTitle"><span>Accesos:</span>
+            <ul>
+                <li><a href="javascript:void(0);" class="noDecorLink" alt="Acceso/registro" onclick="redirectWeb(['logIn'])">Acceso/Registro</a></li>
+                <li><a href="javascript:void(0);" class="noDecorLink" alt="Mostrar galería" onclick="redirectWeb(['gallery'])">Galería</a></li>
+            </ul>
+        </li>
+        <li class="idTitle"><span>Social</span>
+            <ul>
+                <li><a href="https://www.youtube.com/" class="noDecorLink">YouTube</a></li>
+                <li><a href="https://twitter.com/?lang=es" class="noDecorLink">Twitter</a></li>
+                <li><a href="https://es-es.facebook.com/" class="noDecorLink">Facebook</a></li>
+                <li><a href="https://www.instagram.com/" class="noDecorLink">Instagram</a></li>
+            </ul>
+        </li>
+        <li class="idTitle"><span>Categorías:</span>
+            <ul class="menuContentHeader left">
+                <li><span class="superior_candy" onclick="redirectWeb(['superior'])"><a href="javascript:void(0);" class="noDecorLink" alt="Categoría superior">Superior</a></span>
+                    <ul>
+                        <li class="category_shirt" onclick="redirectWeb(['superior','shirt'])"><a href="javascript:void(0);" class="noDecorLink" alt="Producto camisas">Camisas</a></li>
+                        <li class="category_t-shirt" onclick="redirectWeb(['superior','t-shirt'])"><a href="javascript:void(0);" class="noDecorLink" alt="Producto camisetas">Camisetas</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="menuContentHeader">
+                <li><span class="inferior_candy" onclick="redirectWeb(['inferior'])"><a href="javascript:void(0);" class="noDecorLink" alt="Categoría inferior">Inferior</a></span>
+                    <ul>
+                        <li class="category_short" onclick="redirectWeb(['inferior','short'])"><a href="javascript:void(0);" class="noDecorLink" alt="Producto bermudas">Bermudas</a></li>
+                        <li class="category_skirt" onclick="redirectWeb(['inferior','skirt'])"><a href="javascript:void(0);" class="noDecorLink" alt="Producto faldas">Faldas</a></li>
+                        <li class="category_socks" onclick="redirectWeb(['inferior','socks'])"><a href="javascript:void(0);" class="noDecorLink" alt="Producto calcetines">Calcetines</a></li>
+                        <li class="category_shoes" onclick="redirectWeb(['inferior','shoes'])"><a href="javascript:void(0);" class="noDecorLink" alt="Producto calzado">Calzado</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="menuContentHeader">
+                <li><span class="accesorios_candy" onclick="redirectWeb(['accesories'])"><a href="javascript:void(0);" class="noDecorLink" alt="Categoría accesorios">Accesorios</a></span>
+                    <ul>
+                        <li class="category_caps" onclick="redirectWeb(['accesories','caps'])"><a href="javascript:void(0);" class="noDecorLink" alt="Producto gorras">Gorras</a></li>
+                        <li class="category_jewely" onclick="redirectWeb(['accesories','jewely'])"><a href="javascript:void(0);" class="noDecorLink" alt="Producto bisutería">Bisutería</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="menuContentHeader">
+                <li><span class="souvenires_candy" onclick="redirectWeb(['souvenires'])"><a href="javascript:void(0);" class="noDecorLink" alt="Categoría souvenires">Souvenires</a></span>
+                    <ul>
+                        <li class="category_necklace" onclick="redirectWeb(['souvenires','necklace'])"><a href="javascript:void(0);" class="noDecorLink" alt="Producto collares">Collares</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </div>
+    <script src="../js/libs/jQueryv3.5.1.js"></script>
+    <script src="../js/webMap.js"></script>
+</body>
+</html>
